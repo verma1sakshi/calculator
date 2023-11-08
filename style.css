@@ -1,0 +1,76 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+body{
+    min-height: 100vh;
+    max-width: 100vh;
+    /* center of the page */
+    display: flex;
+     /* center on x axis */
+    justify-content: center;
+     /* center on y axis */
+    align-items: center;
+    /* another way to center the page */
+    /* display:grid;
+    place-items: center; */
+    background: linear-gradient(45deg,#0a0a0a,#3a4452);
+}
+
+.calculator{
+    padding:15px;
+    box-shadow: 0 0 15px #000;
+    border : 2px solid rgb(116,114,114);
+    border-radius:15px;
+}
+.displayScreen input{
+    width:260px;
+    border:none;
+    outline:none;
+    padding:10px;
+    margin:20px;
+    background:transparent;
+    color:#fff;
+    font-size: 40px;
+    text-align: right;
+    cursor:pointer;
+}
+input::placeholder{
+    color: #fff;
+}
+button{
+    width:50px;
+    height:50px;
+    margin:10px;
+    background: transparent;
+    color: #fff;
+    font-size:20px 
+    font-weight 600px;
+    border:0;
+    border-radius:50px;
+    box-shadow:-5px -6px 15px #000;
+    outline:1px solid #313131;
+    outline-offset:2px;
+}
+
+button:active{
+    background: #000;
+    transform: translate(3px,2px);
+}
+.opr{
+    color: #fbff00;
+    background: #1e1919; 
+    font-weight:700 ;
+}
+#eqbtn{
+    color: #fff;
+    background: orangered;
+    font-weight: 900;
+}
+h6{
+    text-align: right;
+}
